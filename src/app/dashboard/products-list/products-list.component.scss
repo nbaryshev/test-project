@@ -1,0 +1,29 @@
+.products-list {
+  margin-right: 30px;
+  & .product-wrapper {
+    display: block;
+    padding: 10px;
+    min-height: 100px;
+    border: 1px solid #ddd;
+    & .top-side {
+      display: flex;
+      cursor: pointer;
+      & img {
+        width: 60px;
+        height: 70px;
+      }
+      & .product-details {
+        display: block;
+        margin: 10px;
+      }
+    }
+    & .bottom-side {
+      text-align: right;
+      & button {
+        background-color: rgb(253, 142, 68);
+        border: 0;
+        border-radius: 10px;
+      }
+    }
+  }
+}

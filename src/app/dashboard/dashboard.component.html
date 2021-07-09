@@ -1,0 +1,14 @@
+<div class="dashboard">
+  <div>
+    <button (click)="!addProduct; clicked()">+ Add New Product</button>
+    <app-products-filter></app-products-filter>
+    <app-new-product-form
+      *ngIf="addProduct"
+      [(closeForm)]="closeForm">
+    </app-new-product-form>
+  </div>
+  <div class="products-details">
+    <app-products-list></app-products-list>
+    <app-edit-product></app-edit-product>
+  </div>
+</div>

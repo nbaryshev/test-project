@@ -1,0 +1,23 @@
+.dashboard {
+  display: block;
+  width: 70%;
+  margin: 40px auto 0 auto;
+  & .products-details {
+    display: flex;
+    margin-top: 20px;
+    & app-edit-product {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .dashboard {
+    & .products-details {
+      display: block;
+      & app-edit-product {
+        margin-top: 30px;
+      }
+    }
+  }
+}

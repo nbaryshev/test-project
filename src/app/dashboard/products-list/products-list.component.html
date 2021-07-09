@@ -1,0 +1,21 @@
+<div class="products-list">
+  <div *ngFor="let product of products" class="product-wrapper">
+    <div class="top-side" (click)="editProduct(product)">
+      <div class="image">
+        <img src="../../../assets/shirt.png">
+      </div>
+      <div class="product-details">
+        <p class="product-name">
+          Name: {{product.name}}
+        </p>
+        <p>Description: {{product.description}}</p>
+        <p>Price, $: {{product.price}}</p>
+        <p *ngIf="product.date">Created: {{product.date | date : "dd.MM.y"}}</p>
+      </div>
+    </div>
+    <div class="bottom-side">
+      <button (click)="deleteProduct(product)">Delete</button>
+    </div>
+
+  </div>
+</div>

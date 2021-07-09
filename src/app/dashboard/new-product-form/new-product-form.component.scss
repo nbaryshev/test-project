@@ -1,0 +1,12 @@
+.new-product-form {
+  margin: 20px 0;
+  & .name, .description {
+    width: 300px;
+  }
+  & .price {
+    width: 70px;
+    & .price-alert {
+      width: 300px;
+    }
+  }
+}
